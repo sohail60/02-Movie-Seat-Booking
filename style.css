@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    border: 2px solid blue;
+    font-family: 'Lato', sans-serif;
+    background-color: #242333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.movie-select{
+    /* display: flex; */
+    /* border: 2px solid blue; */
+    /* margin-bottom: 20px; */
+    margin-right: 15px;
+}
+
+.movie-select label{
+    /* border: 2px solid blue; */
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+
+.movie-select select{
+    /* border: 2px solid blue; */
+    margin-bottom: 15px;
+    /* margin-right: 15px; */
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 8px;
+    width: 65%;
+}
+
+.legend{
+    /* border: 2px solid blue; */
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    list-style-type: none;
+    display: flex;
+    margin-left: 2px;
+    align-items: center;
+    justify-content: space-around;
+    /* margin: 10px; */
+    width: 90%;
+    margin: auto;
+}
+
+.legend li{
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+    padding: 5px;
+    color: #777;
+}
+
+.screen{
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+    margin: 20px 0px;
+    box-shadow: 0 3px 10px rgba(255,255,255,0.7);
+    transform: rotateX(-45deg);
+}
+
+.screen-container{
+    perspective: 1000px;
+    margin: 10px 0px;
+}
+
+.seat{
+    background-color: #444451;
+    height: 12px;
+    width: 15px;
+    margin: 3px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.seat:nth-of-type(2){
+    margin-right: 20px;
+}
+
+.seat:nth-last-of-type(2){
+    margin-left: 20px;
+}
+
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.legend .seat:not(.occupied):hover{
+    cursor: default;
+    transform: scale(1);
+}
+
+.row{
+    display: flex;
+}
+
+.selected{
+    background-color: #6feaf6;
+}
+
+.occupied{
+    background-color: #fff;
+}
+
+span{
+    color: #6feaf6;
+}
