@@ -38,31 +38,31 @@ body{
     border-radius: 5px;
     padding: 5px;
     padding-left: 8px;
-    width: 65%;
+    /* width: 65%; */
 }
 
 .legend{
-    /* border: 2px solid blue; */
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     list-style-type: none;
     display: flex;
     margin-left: 2px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     /* margin: 10px; */
-    width: 90%;
+    width: 85%;
+    padding-left: 0px;
     margin: auto;
 }
 
 .legend li{
-    border: 2px solid blue;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 0px 10px;
+    justify-content: space-evenly;
     padding: 5px;
     color: #777;
+    width: 200%;
+    margin: auto;
 }
 
 .screen{
